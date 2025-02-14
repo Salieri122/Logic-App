@@ -20,7 +20,7 @@ public class Addition extends LogicUnit<Addition.Input, Addition.Output> {
 
     @Data
     public static class Input {
-        private String text;
+        private Double num;
     }
 
     @Data
@@ -30,7 +30,7 @@ public class Addition extends LogicUnit<Addition.Input, Addition.Output> {
 
     @Override
     public void run() {
-        output.setText("Hello " + input.getText());
+        output.setText("Hello " + Double.valueOf(input.num));
     }
 
 
